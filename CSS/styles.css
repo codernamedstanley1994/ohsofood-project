@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  background-color: white;
+  padding: 20px 20px 20px 10px;
+  justify-content: center;
+}
+.header__logo {
+  justify-content: center;
+}
+
+.location {
+  background-color: rgb(227, 226, 226);
+  display: flex;
+  justify-content: center;
+}
+
+.fa-sharp {
+  padding-top: 17px;
+  padding-right: 10px;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore {
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,22 @@
+// Functions
+@import "./Functions/variable";
+@import "./Functions/mixins";
+
+
+// html
+@import "./html/web-page";
+@import "./html/typography";
+
+// Components
+@import "./components/buttons";
+@import "./components/cards";
+
+
+// Layout
+@import "./layout/footer";
+@import "./layout/header";
+
+
+// Pages
+@import "./pages/index";
+@import "./pages/menu";
