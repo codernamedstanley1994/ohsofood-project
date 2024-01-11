@@ -9,7 +9,7 @@
 }
 
 .location {
-  background-color: rgb(227, 226, 226);
+  background-color: #EAEAEA;
   display: flex;
   justify-content: center;
 }
@@ -17,6 +17,22 @@
 .fa-sharp {
   padding-top: 17px;
   padding-right: 10px;
+}
+
+.nav {
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__card {
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  display: flex;
+  align-items: center;
+  background-color: #F6F6F6;
+  margin: 20px;
+  padding-bottom: 10px;
 }
 
 .top {
