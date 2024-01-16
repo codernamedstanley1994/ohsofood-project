@@ -1,30 +1,33 @@
- 
- // Colors
+// Colors
 
-  $primary-color: #9356DC;
-  $secondary-color: #FF79DA;
-  $tertiary-color: #99E2D0 ;
-  $lightPrimary-color: #e9d8ff;
-  $lightSecondary-color: #f5eeff;
-  $darkTertiary-color:#0f614c;
-  $base-white-color: white;
-  $base-black-color: black;
-  $base-gray-color:#EAEAEA;
-  $lightGray-color:#F6F6F6;
-  $darkGray-color: #353535;
-  $background-loader-color: #f2f2f2;
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$lightPrimary-color: #e9d8ff;
+$lightSecondary-color: #f5eeff;
+$darkTertiary-color: #0f614c;
+$base-white-color: white;
+$base-black-color: black;
+$base-gray-color: #eaeaea;
+$lightGray-color: #f6f6f6;
+$darkGray-color: #353535;
+$background-loader-color: #f2f2f2;
 
+$width: (
+  "logo-width": 197px,
+  "header-width": 3.5rem,
+  "index-width": 3rem,
+);
 
+$height: (
+  "base-height": 100%,
+  "header-height": 3rem,
+  "index-height": 3rem,
+);
 
-  $width: (
-    "base-width": 100%,
-    "header-width": 3.5rem,
-    "index-width": 3rem,
-  );
- 
-  
-  $height: (
-    "base-height": 100%,
-    "header-height": 3rem,
-    "index-height": 3rem,
-  );
+// Fonts
+
+$primary-font: "Roboto", sans-serif;
+
+$big-font: 24px;
+$small-font: 18px;

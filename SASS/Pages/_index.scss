@@ -1,16 +1,20 @@
-.top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .explore {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+  text-align: center;
+  background-color: $lightGray-color;
+  width: 100%;
+
+  &__title {
+    @include big-font;
   }
-  
+
+  &__description {
+    @include small-font;
+  }
+}

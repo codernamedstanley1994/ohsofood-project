@@ -1,16 +1,29 @@
 // Mixins
 
 @mixin nav {
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px #00000026;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px #00000026;
+  cursor: pointer;
 }
 
 @mixin rest-card {
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px 0px #0000001A;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px #0000001a;
 }
 
 @mixin sections {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin big-font {
+  font-family: $primary-font;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@mixin small-font {
+  font-family: $primary-font;
+  font-size: 18px;
+  font-weight: 300;
 }

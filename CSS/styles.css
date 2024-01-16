@@ -6,10 +6,11 @@
 }
 .header__logo {
   justify-content: center;
+  width: 197px;
 }
 
 .location {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   display: flex;
   justify-content: center;
 }
@@ -21,16 +22,14 @@
 
 .nav {
   padding-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
 }
-
 .nav__card {
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  cursor: pointer;
   display: flex;
   align-items: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin: 20px;
   padding-bottom: 10px;
 }
@@ -43,9 +42,17 @@
 }
 
 .explore {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: column;
   text-align: center;
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.explore__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.explore__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,45 +1,40 @@
-
-
 //-------------Header Main & Menu---------------//
 .header {
-    display: flex;
-    background-color: $base-white-color;
-    padding: 20px 20px 20px 10px;
+  display: flex;
+  background-color: $base-white-color;
+  padding: 20px 20px 20px 10px;
+  justify-content: center;
+
+  &__logo {
     justify-content: center;
-
-    &__logo{
-        justify-content: center;
-    }
-
+    width: map-get($width, logo-width);
+  }
 }
 
 //-------------Location---------------//
-.location{
+.location {
   background-color: $base-gray-color;
   display: flex;
   justify-content: center;
-
 }
 
-.fa-sharp{
-    padding-top: 17px;
-    padding-right: 10px;
+.fa-sharp {
+  padding-top: 17px;
+  padding-right: 10px;
 }
 
 //-------------Navigation Card---------------//
 
 .nav {
-    padding-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
+  padding-bottom: 20px;
 
   &__card {
     @include nav;
     display: flex;
-    
+
     align-items: center;
     background-color: $lightGray-color;
     margin: 20px;
     padding-bottom: 10px;
-    }
   }
+}
