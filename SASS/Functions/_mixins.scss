@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-@mixin rest-card {
+@mixin rest-cards {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px #0000001a;
 }
@@ -14,6 +14,8 @@
 @mixin sections {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 @mixin big-font {
@@ -22,8 +24,40 @@
   font-weight: 700;
 }
 
+@mixin nav-font {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@mixin card-font {
+  font-family: $primary-font;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin card-small {
+  font-family: $primary-font;
+  font-size: 17px;
+  font-weight: 300;
+}
+
 @mixin small-font {
   font-family: $primary-font;
   font-size: 18px;
   font-weight: 300;
+}
+
+@mixin footer-logo {
+  font-family: $secondary-font;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  height: 26px;
+}
+
+@mixin footer-txt {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 500;
 }

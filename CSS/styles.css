@@ -1,3 +1,108 @@
+@font-face {
+  font-family: "shrikhand";
+  src: url(/font/Shrikhand/Shrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(/font/Roboto/Roboto-Regular.ttf);
+}
+.btn-main {
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  color: white;
+  padding: 18px 40px;
+  text-decoration: none;
+}
+.btn-main__bold {
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.rest {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-top: 40px;
+  gap: 20px;
+}
+.rest__title {
+  font-family: "roboto";
+  font-size: 24px;
+  font-weight: 700;
+  width: 340px;
+}
+.rest__card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  background-color: white;
+  overflow: hidden;
+  width: 340px;
+}
+.rest__header {
+  position: relative;
+}
+.rest img {
+  height: 180px;
+  width: 100%;
+}
+.rest__new {
+  background-color: #99e2d0;
+  color: #0f614c;
+  position: absolute;
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 300;
+  padding: 0;
+  padding: 5px 15px 5px 15px;
+}
+.rest__description {
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 15px;
+}
+.rest a {
+  text-decoration: none;
+  color: black;
+}
+.rest__name {
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 700;
+}
+.rest__location {
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  margin-top: -20px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+.footer__logo {
+  padding: 30px 0 0 35px;
+  font-family: "shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  height: 26px;
+}
+.footer__list {
+  list-style: none;
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .header {
   display: flex;
   background-color: white;
@@ -14,6 +119,15 @@
   display: flex;
   justify-content: center;
 }
+.location .fa-sharp {
+  color: #353535;
+}
+.location p {
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 700;
+  color: #353535;
+}
 
 .fa-sharp {
   padding-top: 17px;
@@ -21,17 +135,53 @@
 }
 
 .nav {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  margin-top: 40px;
 }
 .nav__card {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   cursor: pointer;
   display: flex;
+  width: 322px;
   align-items: center;
   background-color: #f6f6f6;
   margin: 20px;
   padding-bottom: 10px;
+}
+.nav__title {
+  padding-bottom: 10px;
+  font-family: "roboto";
+  font-size: 24px;
+  font-weight: 700;
+}
+.nav__number {
+  place-items: center;
+  background-color: #9356dc;
+  border-radius: 50%;
+  color: white;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  left: 213px;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav__description {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+}
+.nav__text {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .top {
@@ -45,14 +195,18 @@
   text-align: center;
   background-color: #f6f6f6;
   width: 100%;
+  padding-bottom: 80px;
+  padding-top: 20px;
 }
 .explore__title {
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto";
   font-size: 24px;
   font-weight: 700;
+  padding-bottom: 20px;
 }
 .explore__description {
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto";
   font-size: 18px;
   font-weight: 300;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=styles.css.map */

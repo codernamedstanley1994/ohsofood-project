@@ -1,0 +1,59 @@
+//-------------Main - Restaurants Cards---------------//
+
+.rest {
+  background-color: $lightGray-color;
+  @include sections;
+  padding-bottom: 80px;
+  padding-top: 40px;
+  gap: 20px;
+
+  &__title {
+    @include big-font;
+    width: 340px;
+  }
+
+  &__card {
+    @include rest-cards;
+    background-color: $base-white-color;
+    overflow: hidden;
+    width: 340px;
+  }
+
+  &__header {
+    position: relative;
+  }
+
+  img {
+    height: 180px;
+    width: 100%;
+  }
+
+  &__new {
+    background-color: $tertiary-color;
+    color: $darkTertiary-color;
+    position: absolute;
+    @include card-small;
+    padding: 0;
+    padding: 5px 15px 5px 15px;
+  }
+
+  &__description {
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__name {
+    @include card-font;
+  }
+
+  &__location {
+    @include card-small;
+  }
+}

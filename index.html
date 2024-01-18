@@ -43,7 +43,7 @@
               Discover our carefully selected high-end restaurants
             </p>
 
-            <a href="#restaurants" class="btn-index btn-index-bold">
+            <a href="#restaurants" class="btn-main btn-main__bold">
               Explore our restaurants
             </a>
           </section>
@@ -55,10 +55,13 @@
             </div>
             <!-- Navigation 01 -->
             <div class="nav__card">
-              <span class="nav-number">1</span>
-              <div class="nav-description">
-                <p class="nav-text">
-                  <i class="nav-icon fa-solid fa-mobile-screen-button"></i>
+              <span class="nav__number">1</span>
+              <div class="nav__description">
+                <p class="nav__text">
+                  <i
+                    class="nav__icon fa-solid fa-mobile-screen-button"
+                    style="color: #7e7e7e"
+                  ></i>
                   Choose a restaurant
                 </p>
               </div>
@@ -66,21 +69,27 @@
 
             <!-- Navigation 02 -->
             <div class="nav__card">
-              <span class="nav-number">2</span>
-              <div class="nav-description">
-                <p class="nav-text">
-                  <i class="nav-icon fa-solid fa-mobile-screen-button"></i>Build
-                  your meal
+              <span class="nav__number">2</span>
+              <div class="nav__description">
+                <p class="nav__text">
+                  <i
+                    class="nav__icon fa-solid fa-list"
+                    style="color: #7e7e7e"
+                  ></i
+                  >Build your meal
                 </p>
               </div>
             </div>
 
             <!-- Navigation 03 -->
             <div class="nav__card">
-              <span class="nav-number">3</span>
-              <div class="nav-description">
-                <p class="nav-text">
-                  <i class="nav-icon fa-solid fa-mobile-screen-button"></i>
+              <span class="nav__number">3</span>
+              <div class="nav__description">
+                <p class="nav__text">
+                  <i
+                    class="nav__icon fa-solid fa-store"
+                    style="color: #7e7e7e"
+                  ></i>
                   Enjoy your meal at the restaurant
                 </p>
               </div>
@@ -88,82 +97,81 @@
           </div>
         </div>
 
-        <section class="rest-section" id="restaurants">
-          <h2 class="main-title-restaurants">Restaurants</h2>
+        <div class="rest" id="restaurants">
+          <h2 class="rest__title">Restaurants</h2>
 
           <!-- Restaurant card 01 -->
-          <div class="card-wrapper">
-            <article class="rest-card">
-              <a href="menu_01.html" class="rest__header">
-                <img
-                  class="rest__image"
-                  src="./Images-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                  alt="Kitchen West"
-                />
-                <p class="restaurant-card-new">New</p>
-              </a>
-              <div class="rest__description">
-                <a href="#">
-                  <h3 class="rest-name">Kitchen West</h3>
-                  <p class="rest-location">Angel</p>
-                </a>
-              </div>
-            </article>
 
-            <!-- Restaurant card 2 -->
-            <article class="rest-card">
-              <a href="menu_02.html" class="rest__header">
-                <img
-                  class="rest__image"
-                  src="./Images-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                  alt="Elderflower"
-                />
-
-                <p class="rest-card-new">New</p>
+          <article class="rest__card">
+            <a href="menu_01.html" class="rest__header">
+              <img
+                class="rest__image"
+                src="./Images-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="Kitchen West"
+              />
+              <p class="rest__new">New</p>
+            </a>
+            <div class="rest__description">
+              <a href="#">
+                <h3 class="rest__name">Kitchen West</h3>
+                <p class="rest__location">Angel</p>
               </a>
-              <div class="rest__description">
-                <a href="#">
-                  <h3 class="rest-name">Elderflower</h3>
-                  <p class="rest-location">Old Street</p>
-                </a>
-              </div>
-            </article>
+            </div>
+          </article>
 
-            <!-- Restaurant card 3 -->
-            <article class="rest-card">
-              <a href="menu_03.html" class="rest__header">
-                <img
-                  class="rest__image"
-                  src="./Images-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                  alt="Shoreditch Canteen"
-                />
-              </a>
-              <div class="rest__description">
-                <a href="#">
-                  <h3 class="rest-name">Shoreditch Canteen</h3>
-                  <p class="rest-location">Shoreditch</p>
-                </a>
-              </div>
-            </article>
+          <!-- Restaurant card 2 -->
+          <article class="rest__card">
+            <a href="menu_02.html" class="rest__header">
+              <img
+                class="rest__image"
+                src="./Images-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="Elderflower"
+              />
 
-            <!-- Restaurant card 4 -->
-            <article class="rest-card">
-              <a href="menu_04.html" class="rest__header">
-                <img
-                  class="rest__image"
-                  src="./Images-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                  alt="The Bayleaf"
-                />
+              <p class="rest__new">New</p>
+            </a>
+            <div class="rest__description">
+              <a href="#">
+                <h3 class="rest__name">Elderflower</h3>
+                <p class="rest__location">Old Street</p>
               </a>
-              <div class="rest__description">
-                <a href="#">
-                  <h3 class="rest-name">The Bayleaf</h3>
-                  <p class="rest-location">Hoxton</p>
-                </a>
-              </div>
-            </article>
-          </div>
-        </section>
+            </div>
+          </article>
+
+          <!-- Restaurant card 3 -->
+          <article class="rest__card">
+            <a href="menu_03.html" class="rest__header">
+              <img
+                class="rest__image"
+                src="./Images-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="Shoreditch Canteen"
+              />
+            </a>
+            <div class="rest__description">
+              <a href="#">
+                <h3 class="rest__name">Shoreditch Canteen</h3>
+                <p class="rest__location">Shoreditch</p>
+              </a>
+            </div>
+          </article>
+
+          <!-- Restaurant card 4 -->
+          <article class="rest__card">
+            <a href="menu_04.html" class="rest__header">
+              <img
+                class="rest__image"
+                src="./Images-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="The Bayleaf"
+              />
+            </a>
+            <div class="rest__description">
+              <a href="#">
+                <h3 class="rest__name">The Bayleaf</h3>
+                <p class="rest__location">Hoxton</p>
+              </a>
+            </div>
+          </article>
+        </div>
       </main>
 
       <!-------- Footer -------->

@@ -13,21 +13,18 @@ $lightGray-color: #f6f6f6;
 $darkGray-color: #353535;
 $background-loader-color: #f2f2f2;
 
-$width: (
-  "logo-width": 197px,
-  "header-width": 3.5rem,
-  "index-width": 3rem,
-);
-
-$height: (
-  "base-height": 100%,
-  "header-height": 3rem,
-  "index-height": 3rem,
-);
-
 // Fonts
+@font-face {
+  font-family: "shrikhand";
+  src: url(/font/Shrikhand/Shrikhand-Regular.ttf);
+}
 
-$primary-font: "Roboto", sans-serif;
+@font-face {
+  font-family: "roboto";
+  src: url(/font/Roboto/Roboto-Regular.ttf);
+}
 
+$primary-font: "roboto";
+$secondary-font: "shrikhand";
 $big-font: 24px;
 $small-font: 18px;

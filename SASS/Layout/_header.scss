@@ -7,7 +7,7 @@
 
   &__logo {
     justify-content: center;
-    width: map-get($width, logo-width);
+    width: 197px;
   }
 }
 
@@ -16,6 +16,15 @@
   background-color: $base-gray-color;
   display: flex;
   justify-content: center;
+
+  .fa-sharp {
+    color: $darkGray-color;
+  }
+
+  p {
+    @include nav-font;
+    color: $darkGray-color;
+  }
 }
 
 .fa-sharp {
@@ -26,15 +35,50 @@
 //-------------Navigation Card---------------//
 
 .nav {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  margin-top: 40px;
 
   &__card {
     @include nav;
     display: flex;
-
+    width: 322px;
     align-items: center;
     background-color: $lightGray-color;
     margin: 20px;
     padding-bottom: 10px;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    @include big-font;
+  }
+
+  &__number {
+    place-items: center;
+    background-color: $primary-color;
+    border-radius: 50%;
+    color: $base-white-color;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    left: 213px;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__description {
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    @include nav-font;
   }
 }
