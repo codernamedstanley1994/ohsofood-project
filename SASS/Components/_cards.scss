@@ -4,7 +4,7 @@
   background-color: $lightGray-color;
   @include sections;
   padding-bottom: 80px;
-  padding-top: 40px;
+  padding-top: 30px;
   gap: 20px;
 
   &__title {
@@ -33,8 +33,9 @@
     color: $darkTertiary-color;
     position: absolute;
     @include card-small;
-    padding: 0;
     padding: 5px 15px 5px 15px;
+    right: 10px;
+    bottom: 125px;
   }
 
   &__description {

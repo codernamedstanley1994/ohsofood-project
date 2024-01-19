@@ -6,6 +6,16 @@
   font-family: "roboto";
   src: url(/font/Roboto/Roboto-Regular.ttf);
 }
+html {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 375px;
+}
+
 .btn-main {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 25px;
@@ -27,7 +37,7 @@
   width: 100%;
   align-items: center;
   padding-bottom: 80px;
-  padding-top: 40px;
+  padding-top: 30px;
   gap: 20px;
 }
 .rest__title {
@@ -57,8 +67,9 @@
   font-family: "roboto";
   font-size: 17px;
   font-weight: 300;
-  padding: 0;
   padding: 5px 15px 5px 15px;
+  right: 10px;
+  bottom: 125px;
 }
 .rest__description {
   align-items: center;
@@ -164,8 +175,8 @@
   height: 24px;
   justify-content: center;
   display: flex;
-  position: absolute;
-  left: 213px;
+  position: relative;
+  right: 10px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 500;
@@ -173,7 +184,7 @@
 .nav__description {
   display: flex;
   width: 100%;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 .nav__text {
   width: 100%;
