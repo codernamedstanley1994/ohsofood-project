@@ -28,3 +28,7 @@ $primary-font: "roboto";
 $secondary-font: "shrikhand";
 $big-font: 24px;
 $small-font: 18px;
+
+$prog-flick-dur: 1000ms;
+$prog-flick-delay: 150ms;
+$page-delay: $prog-flick-dur + $prog-flick-delay;
