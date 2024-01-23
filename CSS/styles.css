@@ -19,9 +19,9 @@ body {
 
 .loader {
   display: inline-block;
-  z-index: 100;
-  position: fixed;
-  top: 250px;
+  z-index: 1;
+  position: absolute;
+  top: 180px;
   left: 600px;
 }
 .loader__icon {
@@ -79,6 +79,16 @@ body {
   color: white;
   padding: 18px 40px;
   text-decoration: none;
+  transition: background-color 2.5s ease-in-out;
+}
+.btn-main:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#fc94df, #a574e0);
+  box-shadow: 0 0 10px linear-gradient(#fc94df, #a574e0);
+}
+.btn-main:not(:hover) {
+  transition: background-color 2.5s ease-in-out;
+  background-image: linear-gradient(#ff79da, #9356dc);
 }
 .btn-main__bold {
   font-family: "roboto";

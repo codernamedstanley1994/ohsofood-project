@@ -2,9 +2,9 @@
 
 .loader {
   display: inline-block;
-  z-index: 100;
-  position: fixed;
-  top: 250px;
+  z-index: 1;
+  position: absolute;
+  top: 180px;
   left: 600px;
 
   &__icon {
