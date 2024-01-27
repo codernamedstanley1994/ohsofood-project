@@ -72,6 +72,29 @@ body {
     transform: translateX(0);
   }
 }
+.card__icon--full {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  font-size: 2rem;
+  position: absolute;
+  bottom: 15px;
+  left: 290px;
+  width: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card__icon--empty {
+  font-size: 2rem;
+  background-color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 290px;
+  width: 2rem;
+}
+.card__icon--empty:hover {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+
 .btn-main {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 25px;
@@ -79,15 +102,14 @@ body {
   color: white;
   padding: 18px 40px;
   text-decoration: none;
-  transition: background-color 2.5s ease-in-out;
 }
 .btn-main:hover {
   cursor: pointer;
   background-image: linear-gradient(#fc94df, #a574e0);
   box-shadow: 0 0 10px linear-gradient(#fc94df, #a574e0);
+  transition: background-color 5s ease;
 }
 .btn-main:not(:hover) {
-  transition: background-color 2.5s ease-in-out;
   background-image: linear-gradient(#ff79da, #9356dc);
 }
 .btn-main__bold {
@@ -131,8 +153,7 @@ body {
   color: #0f614c;
   position: absolute;
   font-family: "roboto";
-  font-size: 17px;
-  font-weight: 300;
+  font-weight: 600;
   padding: 5px 15px 5px 15px;
   right: 10px;
   bottom: 125px;

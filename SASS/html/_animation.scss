@@ -58,3 +58,28 @@
     transform: translateX(0);
   }
 }
+
+.card__icon {
+  &--full {
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    font-size: 2rem;
+    position: absolute;
+    bottom: 15px;
+    left: 290px;
+    width: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &--empty {
+    font-size: 2rem;
+    background-color: white;
+    position: absolute;
+    bottom: 15px;
+    left: 290px;
+    width: 2rem;
+    &:hover {
+      opacity: 0;
+      transition-duration: 500ms;
+    }
+  }
+}
