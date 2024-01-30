@@ -5,13 +5,36 @@
   line-height: 20px;
   padding-bottom: 20px;
 
-  &__logo {
+  &__container {
+    display: flex;
+    flex-direction: column;
     padding: 30px 0 0 35px;
-    @include footer-logo;
+    gap: 16px;
   }
 
-  &__list {
-    list-style: none;
+  a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
     @include footer-txt;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__logo {
+    @include footer-logo;
+  }
+}
+
+// media queries
+@media only screen and (min-width: 1024px) {
+  .footer {
+    &__container {
+      flex-direction: row;
+      align-items: center;
+      direction: rtl;
+      gap: 70px;
+      padding-right: 30px;
+    }
   }
 }

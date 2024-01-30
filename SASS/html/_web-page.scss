@@ -1,10 +1,41 @@
-html {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  scroll-behavior: smooth;
+.main-container {
+  margin: auto;
 }
 
-body {
-  width: 375px;
+@media only screen and (min-width: 1024px) {
+  .rest {
+    .rest-wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 100px;
+      justify-content: center;
+    }
+  }
+  .wrapper {
+    gap: 50px !important;
+  }
+  .rest__title {
+    width: 1100px !important;
+  }
+  .rest__card {
+    width: 500px !important;
+  }
+  .card__icon {
+    &--full {
+      left: 450px !important;
+    }
+    &--empty {
+      left: 450px !important;
+    }
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .explore {
+    width: 100%;
+  }
 }
