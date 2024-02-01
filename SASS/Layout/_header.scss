@@ -71,7 +71,6 @@
 
   &__description {
     display: flex;
-    width: 100%;
     padding-left: 10px;
   }
 
@@ -80,5 +79,24 @@
     display: flex;
     gap: 20px;
     @include nav-font;
+  }
+}
+
+//-------------menu header---------------//
+
+.header__navigation {
+  i {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    color: #353535;
+  }
+}
+
+.header__img {
+  img {
+    width: 100%;
+    height: 275px;
+    z-index: -1;
   }
 }

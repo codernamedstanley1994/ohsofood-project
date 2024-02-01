@@ -101,7 +101,7 @@
   position: absolute;
   bottom: 1px;
   left: 290px;
-  width: 2rem;
+  width: 32px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -111,9 +111,33 @@
   position: absolute;
   bottom: 1px;
   left: 290px;
-  width: 2rem;
+  width: 32px;
 }
 .card__icon--empty:hover {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+
+.main__icon--full i {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  float: right;
+  font-size: 32px;
+  position: absolute;
+  right: 15px;
+  top: 40px;
+}
+.main__icon--empty i {
+  background-color: #f6f6f6;
+  float: right;
+  font-size: 32px;
+  font-weight: 100;
+  position: absolute;
+  right: 15px;
+  top: 40px;
+}
+.main__icon--empty i:hover {
   opacity: 0;
   transition-duration: 500ms;
 }
@@ -214,6 +238,80 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  overflow: hidden;
+  position: relative;
+  height: 73px;
+  bottom: 84px;
+  left: 109%;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.check {
+  color: white;
+}
+
+.menu__item {
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  background-color: white;
+  border-radius: 15px;
+  height: 72px;
+  width: 349px;
+}
+.menu__item strong {
+  transition: 0.3s linear;
+  font-family: "roboto";
+  font-size: 15px;
+}
+.menu__item h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.5s linear;
+}
+.menu__item h4 {
+  position: relative;
+  bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.5s linear;
+}
+.menu__item:hover h4 {
+  margin-right: 6rem;
+  transition: 0.3s linear;
+}
+.menu__item:hover h3 {
+  margin-right: 6rem;
+  transition: 0.3s linear;
+}
+.menu__item:hover .line {
+  transform: translate(-100px);
+  width: 20%;
+  opacity: 1;
+}
+.menu__item:hover strong {
+  margin-right: 4rem;
+  transition: 0.3s linear;
+}
+.menu__item:hover .check {
+  transition-duration: 0.5s ease;
+  color: white;
+}
+.menu__price {
+  position: relative;
+  float: right;
+  bottom: 45px;
+  right: 8px;
 }
 
 .footer {
@@ -325,7 +423,6 @@
 }
 .nav__description {
   display: flex;
-  width: 100%;
   padding-left: 10px;
 }
 .nav__text {
@@ -335,6 +432,19 @@
   font-family: "roboto";
   font-size: 16px;
   font-weight: 700;
+}
+
+.header__navigation i {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: #353535;
+}
+
+.header__img img {
+  width: 100%;
+  height: 275px;
+  z-index: -1;
 }
 
 .top {
@@ -371,14 +481,40 @@
 }
 
 .menu__background {
-  background-color: #f2f2f2;
-  border-radius: 2.5rem 2.5rem 0 0;
-  margin-top: -3rem;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  margin-top: -50px;
   position: relative;
 }
-.menu__background h1,
+.menu__background h1 {
+  font-family: "shrikhand";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  margin-left: -150px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
 .menu__background h2 {
-  margin-left: 2rem;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+}
+.menu__background h3 {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 20px;
+  padding-top: 12px;
+}
+.menu__background h4 {
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: -7px;
 }
 .menu__background .btn {
   display: flex;
@@ -389,4 +525,5 @@
 .menu__section {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */

@@ -73,3 +73,80 @@
   flex-direction: column;
   gap: 20px;
 }
+
+//-------------Menu-cards---------------//
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $tertiary-color;
+  overflow: hidden;
+  position: relative;
+  height: 73px;
+  bottom: 84px;
+  left: 109%;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.check {
+  color: $base-white-color;
+}
+
+.menu {
+  &__item {
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001a;
+    background-color: white;
+    border-radius: 15px;
+    height: 72px;
+    width: 349px;
+    strong {
+      transition: 0.3s linear;
+      font-family: $primary-font;
+      font-size: 15px;
+    }
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      transition: 0.5s linear;
+    }
+    h4 {
+      position: relative;
+      bottom: 0.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      transition: 0.5s linear;
+    }
+    &:hover h4 {
+      margin-right: 6rem;
+      transition: 0.3s linear;
+    }
+    &:hover h3 {
+      margin-right: 6rem;
+      transition: 0.3s linear;
+    }
+    &:hover .line {
+      transform: translate(-100px);
+      width: 20%;
+      opacity: 1;
+    }
+    &:hover strong {
+      margin-right: 4rem;
+      transition: 0.3s linear;
+    }
+    &:hover .check {
+      transition-duration: 0.5s ease;
+      color: $base-white-color;
+    }
+  }
+  &__price {
+    position: relative;
+    float: right;
+    bottom: 45px;
+    right: 8px;
+  }
+}

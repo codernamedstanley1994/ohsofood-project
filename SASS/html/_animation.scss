@@ -66,7 +66,7 @@
     position: absolute;
     bottom: 1px;
     left: 290px;
-    width: 2rem;
+    width: 32px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -76,7 +76,33 @@
     position: absolute;
     bottom: 1px;
     left: 290px;
-    width: 2rem;
+    width: 32px;
+    &:hover {
+      opacity: 0;
+      transition-duration: 500ms;
+    }
+  }
+}
+
+.main__icon {
+  &--full i {
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: right;
+    font-size: 32px;
+    position: absolute;
+    right: 15px;
+    top: 40px;
+  }
+  &--empty i {
+    background-color: $lightGray-color;
+    float: right;
+    font-size: 32px;
+    font-weight: 100;
+    position: absolute;
+    right: 15px;
+    top: 40px;
     &:hover {
       opacity: 0;
       transition-duration: 500ms;
