@@ -46,18 +46,7 @@
   }
 }
 
-.main-container {
-  animation: web-page 5.5s $page-delay both;
-}
-
-@keyframes web-page {
-  0% {
-    transform: translateX(-9999px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+//-------------Heart---------------//
 
 .card__icon {
   &--full {
@@ -108,4 +97,34 @@
       transition-duration: 500ms;
     }
   }
+}
+
+//-------------menu fade in---------------//
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translatex(-9999px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+.fade-inn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.starter-section {
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.mains-section {
+  animation: fadeIn 3.5s ease-in-out;
+}
+
+.dessert-section {
+  animation: fadeInn 0.5s ease-in-out;
+  animation-delay: 3s;
 }
