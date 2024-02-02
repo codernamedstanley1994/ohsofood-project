@@ -112,10 +112,6 @@
   }
 }
 
-.fade-inn {
-  animation: fadeIn 1s ease-in-out;
-}
-
 .starter-section {
   animation: fadeIn 2.5s ease-in-out;
 }
@@ -125,6 +121,5 @@
 }
 
 .dessert-section {
-  animation: fadeInn 0.5s ease-in-out;
-  animation-delay: 3s;
+  animation: fadeIn 4.5s ease-in-out;
 }
