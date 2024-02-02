@@ -7,7 +7,10 @@
   src: url(/font/Roboto/Roboto-Regular.ttf);
 }
 .main-container {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 375px;
+  max-width: 1440px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -163,6 +166,32 @@
   font-family: "roboto";
   font-size: 16px;
   font-weight: 700;
+}
+
+.btn {
+  background-image: linear-gradient(#ff79da 0%, #9356dc 100%);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  color: white;
+  display: inline-block;
+  font-family: "roboto";
+  font-size: 16px;
+  height: 50px;
+  line-height: 0.4rem;
+  padding: 24px;
+  width: 186px;
+  border: none;
+}
+.btn:hover {
+  transition-duration: 500ms;
+  background-image: linear-gradient(#ff88de, #9b63df);
+}
+
+.btn-align {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 45px;
+  padding-top: 12px;
 }
 
 .rest {
@@ -459,6 +488,7 @@
   background-color: #f6f6f6;
   padding-bottom: 80px;
   padding-top: 20px;
+  width: 100%;
 }
 .explore__title {
   font-family: "roboto";
@@ -480,6 +510,10 @@
   gap: 1rem;
 }
 
+.shoreditch {
+  padding-left: 80px;
+}
+
 .menu__background {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
@@ -489,9 +523,9 @@
 .menu__background h1 {
   font-family: "shrikhand";
   font-weight: 400;
-  font-size: 28px;
+  font-size: 25px;
   line-height: 40px;
-  margin-left: -150px;
+  margin-left: -175px;
   padding-top: 40px;
   display: flex;
   justify-content: center;
@@ -501,6 +535,9 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 8px;
+  width: 42px;
 }
 .menu__background h3 {
   font-family: "roboto";
