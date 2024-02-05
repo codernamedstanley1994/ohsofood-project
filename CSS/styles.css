@@ -173,6 +173,7 @@ html {
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
+  margin-top: 20px;
 }
 
 .mains-section {
