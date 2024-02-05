@@ -136,12 +136,21 @@
 
 .starter-section {
   animation: fadeIn 2.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .mains-section {
   animation: fadeIn 3.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .dessert-section {
   animation: fadeIn 4.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
 }

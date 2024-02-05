@@ -1,8 +1,22 @@
-.menu__starters .menu__main .menu__desserts {
+.menu__starters {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10px;
+}
+
+.menu__main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu__desserts {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .shoreditch {
@@ -32,7 +46,6 @@
   h3 {
     @include menu-item;
     margin-left: 20px;
-    padding-top: 12px;
   }
 
   h4 {
@@ -52,4 +65,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media only screen and (min-width: 1280px) {
+  .menu {
+    &__background {
+      margin-left: auto;
+      margin-right: auto;
+      width: 970px;
+    }
+  }
+  .menu__background h1 {
+    margin-left: 20px;
+  }
+  .shoreditch {
+    padding-right: 200px;
+  }
+  .header__img img {
+    object-fit: cover;
+    height: 384px;
+  }
+
+  .menu__item {
+    width: 570px;
+  }
+
+  .main__icon {
+    &--full i {
+      right: 335px;
+    }
+    &--empty i {
+      right: 335px;
+    }
+  }
 }
