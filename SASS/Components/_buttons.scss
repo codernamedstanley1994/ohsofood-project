@@ -14,8 +14,6 @@
       $lightSecondary-color,
       $lightPrimary-color
     );
-    box-shadow: 0 0 10px
-      linear-gradient($lightSecondary-color, $lightPrimary-color);
     transition: background-color 5s ease;
   }
   &:not(:hover) {

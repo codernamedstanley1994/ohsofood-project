@@ -32,6 +32,7 @@
   padding-right: 10px;
 }
 
+
 //-------------Navigation Card---------------//
 
 .nav {
@@ -81,6 +82,20 @@
     @include nav-font;
   }
 }
+
+
+.nav__text {
+  i{
+    color: #7e7e7e;
+  }
+  i:hover{
+    cursor: pointer;
+    color: $primary-color;
+
+  }
+}
+
+
 
 //-------------menu header---------------//
 

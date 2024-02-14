@@ -67,6 +67,18 @@
   align-items: center;
 }
 
+@media only screen and (min-width: 500px){
+  .main__icon {
+    &--full i {
+      right: 80px;
+    }
+    &--empty i {
+      right: 80px;
+    }
+  }
+
+}
+
 @media only screen and (min-width: 1280px) {
   .menu {
     &__background {
@@ -99,3 +111,5 @@
     }
   }
 }
+
+

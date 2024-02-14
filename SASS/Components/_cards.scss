@@ -8,7 +8,8 @@
 
   &__title {
     @include big-font;
-    width: 375px;
+    display: flex;
+    padding-right: 225px;
   }
 
   &__card {
@@ -135,10 +136,6 @@
     &:hover strong {
       margin-right: 4rem;
       transition: 0.3s linear;
-    }
-    &:hover .check {
-      transition-duration: 0.5s ease;
-      color: $base-white-color;
     }
   }
   &__price {
